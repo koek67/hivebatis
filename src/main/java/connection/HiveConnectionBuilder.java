@@ -8,7 +8,7 @@ package main.java.connection;
  */
 public class HiveConnectionBuilder {
 
-    public HiveConnection build() {
+    public static HiveConnection build() {
         HiveConnection hiveConnection = new HiveConnection();
         hiveConnection.setDriverName("com.amazon.hive.jdbc4.HS2Driver");
         hiveConnection.setJdbcUrl("jdbc:hive2://localhost");

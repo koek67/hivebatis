@@ -14,6 +14,11 @@ public interface AbstractConnection {
      */
     void connect() throws ConnectionDriverNotFoundException, CouldNotConnectToJDBCException;
 
+    /**
+     * Returns the current database connection
+     *
+     * @return current database connection
+     */
     Connection getConnection();
 
 }
